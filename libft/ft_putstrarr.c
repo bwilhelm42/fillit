@@ -6,17 +6,17 @@
 /*   By: bwilhelm <marvin@42.fr>                    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2020/02/24 22:00:47 by bwilhelm          #+#    #+#             */
-/*   Updated: 2020/02/24 22:12:10 by bwilhelm         ###   ########.fr       */
+/*   Updated: 2020/03/06 21:15:16 by bwilhelm         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putstrarr(char **arr, int n)
+void	ft_putstrarr(char **arr)
 {
 	int i;
 
-	i = 0;
-	while (++i < n)
-		ft_putendl(arr[i - 1]);
+	i = -1;
+	while (arr[++i])
+		ft_putendl(arr[i]);
 }
